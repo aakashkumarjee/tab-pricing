@@ -7,5 +7,5 @@ Simple Price Details Page
 #### Unhovered tab
 ![](https://github.com/aakashkumarjee/tab-pricing/blob/main/screenshots/unhovered.png)
 
-#### Unhovered tab
+#### Hovered tab
 ![](https://github.com/aakashkumarjee/tab-pricing/blob/main/screenshots/hovered.png)
