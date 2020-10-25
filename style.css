@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+.pricing {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(211, 211, 211, 0.356);
+  width: 80%;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1),
+    -10px -10px 40px rgba(0, 0, 0, 0.1);
+}
+.header {
+  display: flex;
+  background-color: lightblue;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 20vh;
+  align-items: center;
+  width: 100%;
+}
+
+.header > h1 {
+  font-family: "Poppins", sans-serif;
+}
+.pricing-options {
+  display: flex;
+  justify-content: space-between;
+  width: 24%;
+}
+.pricing-options > li {
+  list-style: none;
+  font-family: "Poppins", Courier, monospace;
+  display: flex;
+  align-items: center;
+}
+
+/* Checkbox styling starts*/
+.plans-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.plans-switch > input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* Checkbox styling ends*/
+
+.annual-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  flex: 1;
+}
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 55vh;
+  width: 20vw;
+  padding: 20px 0px;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-around;
+  align-items: center;
+  flex: 0.33;
+  border-radius: 10px;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+}
+.card > h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.card > h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.card > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.card > button {
+  width: 75%;
+  border: none;
+  background-color: lightblue;
+  height: 2.5rem;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border: 1px solid rgb(164, 204, 218);
+}
+hr {
+  width: 150%;
+  color: blue;
+  border: 1px solid lightblue;
+  margin: 7px;
+  border-radius: 80px;
+}
